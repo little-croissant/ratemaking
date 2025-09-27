@@ -11,11 +11,11 @@ setup(
     description="A comprehensive Python library for P&C actuarial ratemaking",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/YOUR_USERNAME/ratemaking-tools",  # Update with your GitHub URL
+    url="https://github.com/little-croissant/ratemaking-tools",  # Update with your GitHub URL
     project_urls={
-        "Bug Reports": "https://github.com/YOUR_USERNAME/ratemaking-tools/issues",
-        "Source": "https://github.com/YOUR_USERNAME/ratemaking-tools",
-        "Documentation": "https://github.com/YOUR_USERNAME/ratemaking-tools#readme",
+        "Bug Reports": "https://github.com/little-croissant/ratemaking-tools/issues",
+        "Source": "https://github.com/little-croissant/ratemaking-tools",
+        "Documentation": "https://github.com/little-croissant/ratemaking-tools#readme",
     },
     packages=find_packages(),
     classifiers=[
