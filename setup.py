@@ -4,10 +4,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="credibility-tools",
-    version="0.1.0",
+    name="ratemaking-tools",
+    version="0.2.0",
     author="Aria Team",
-    description="A Python library for actuarial credibility calculations",
+    description="A comprehensive Python library for P&C actuarial ratemaking",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=find_packages(),
@@ -24,7 +24,7 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=[
-        # credibility_tools.py only uses standard library
+        # All modules currently use standard library only
     ],
     extras_require={
         "test": [

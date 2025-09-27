@@ -1,7 +1,7 @@
 # pytest tests for credibility tools
 
 import pytest
-from credibility_tools import (
+from ratemaking_tools import (
     # Classical credibility
     classical_full_credibility_frequency,
     classical_full_credibility_severity,
