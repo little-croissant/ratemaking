@@ -7,14 +7,9 @@ A comprehensive Python library for Property & Casualty actuarial ratemaking, pro
 
 ## Features
 
-### 🎯 Currently Available
+### Currently Available
 - **Credibility Analysis**: Classical, Bühlmann, and Bayesian credibility methods
-- **Comprehensive Testing**: Full test suite with actuarial validation
-
-### 🚧 Coming Soon
-- **Trending Analysis**: Loss cost and frequency/severity trending
-- **Exposure Calculations**: Exposure base calculations and adjustments  
-- **Data Processing**: Utilities for ratemaking data preparation
+- **Comprehensive Testing**: Test suite with actuarial validation
 
 ## Installation
 
@@ -110,20 +105,6 @@ pip install -e .
 pip install -e ".[test]"
 ```
 
-### Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## License
 
-MIT License - see LICENSE file for details.
-
-## Roadmap
-
-- ✅ Classical credibility methods
-- ✅ Bühlmann credibility methods  
-- ✅ Bayesian credibility methods
-- 🚧 Trending analysis tools
-- 🚧 Exposure calculation tools
-- 🚧 Data processing utilities
-- 🚧 Rate level indication tools
+MIT License 
