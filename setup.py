@@ -32,10 +32,10 @@ setup(
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
     ],
-    keywords="actuarial ratemaking credibility insurance P&C casualty property",
+    keywords="actuarial ratemaking credibility complements insurance P&C casualty property",
     python_requires=">=3.8",
     install_requires=[
-        # All modules currently use standard library only
+        "pandas>=1.3.0",
     ],
     extras_require={
         "test": [
