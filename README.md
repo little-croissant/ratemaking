@@ -1,10 +1,20 @@
-# Actuarial Credibility Tools
+# Ratemaking Tools
 
-A Python library providing implementations of various actuarial credibility methods including:
+A comprehensive Python library for Property & Casualty actuarial ratemaking, providing tools for credibility analysis, trending, exposure calculations, and data processing.
 
-- Classical (Limited Fluctuation) credibility
-- Bühlmann and Bühlmann-Straub credibility  
-- Bayesian credibility with conjugate priors
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Features
+
+### 🎯 Currently Available
+- **Credibility Analysis**: Classical, Bühlmann, and Bayesian credibility methods
+- **Comprehensive Testing**: Full test suite with actuarial validation
+
+### 🚧 Coming Soon
+- **Trending Analysis**: Loss cost and frequency/severity trending
+- **Exposure Calculations**: Exposure base calculations and adjustments  
+- **Data Processing**: Utilities for ratemaking data preparation
 
 ## Installation
 
@@ -12,14 +22,13 @@ A Python library providing implementations of various actuarial credibility meth
 pip install -r requirements.txt
 ```
 
-## Usage
+## Quick Start
 
 ### Classical Credibility
 
 ```python
-from credibility_tools import (
+from ratemaking_tools import (
     classical_full_credibility_frequency,
-    classical_full_credibility_pure_premium, 
     classical_partial_credibility
 )
 
@@ -36,16 +45,17 @@ estimate = z * observed_rate + (1 - z) * complement_rate
 ### Bühlmann Credibility
 
 ```python
-from credibility_tools import BuhlmannInputs, buhlmann
+from ratemaking_tools import BuhlmannInputs, buhlmann
 
 data = {"risk_1": [1.2, 1.5], "risk_2": [2.1, 1.9]}
 result = buhlmann(BuhlmannInputs(data=data))
+print(f"Credibility weights: {result.Z_by_risk}")
 ```
 
 ### Bayesian Credibility
 
 ```python
-from credibility_tools import bayes_poisson_gamma
+from ratemaking_tools import bayes_poisson_gamma
 
 # Poisson-Gamma conjugate updating
 posterior = bayes_poisson_gamma(
@@ -56,20 +66,64 @@ print(f"Posterior mean: {posterior.mean}")
 print(f"Credibility weight: {posterior.credibility_Z}")
 ```
 
+## Package Structure
+
+```
+ratemaking_tools/
+├── credibility/           # Credibility analysis tools
+│   ├── classical.py      # Classical (Limited Fluctuation) credibility
+│   ├── buhlmann.py       # Bühlmann & Bühlmann-Straub credibility
+│   └── bayesian.py       # Bayesian credibility with conjugate priors
+├── trending/             # Trending analysis tools (coming soon)
+├── exposure/             # Exposure calculation tools (coming soon)
+└── utils/                # Data processing utilities (coming soon)
+```
+
+## Modular Usage
+
+For organized imports, use the submodules:
+
+```python
+# Organized by functionality
+from ratemaking_tools.credibility import classical, buhlmann, bayesian
+
+# Use specific functions
+n_full = classical.classical_full_credibility_frequency(p=0.95, k=0.05)
+```
+
 ## Testing
 
 Run the test suite:
 
 ```bash
-pytest tests/
+pytest tests/ -v
 ```
 
-Run the CAS exam benchmarks:
+## Development
+
+### Setting up for development:
 
 ```bash
-python tests/harness.py
+git clone https://github.com/YOUR_USERNAME/ratemaking-tools.git
+cd ratemaking-tools
+pip install -e .
+pip install -e ".[test]"
 ```
+
+### Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-MIT License
+MIT License - see LICENSE file for details.
+
+## Roadmap
+
+- ✅ Classical credibility methods
+- ✅ Bühlmann credibility methods  
+- ✅ Bayesian credibility methods
+- 🚧 Trending analysis tools
+- 🚧 Exposure calculation tools
+- 🚧 Data processing utilities
+- 🚧 Rate level indication tools
