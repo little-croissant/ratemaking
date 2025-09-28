@@ -3,14 +3,14 @@
 import pytest
 import pandas as pd
 from datetime import date, datetime
-from ratemaking_tools.complements import (
+from ratemaking.complements import (
     trended_present_rates_loss_cost,
     trended_present_rates_rate_change_factor,
     larger_group_applied_rate_change_to_present_rate,
     HarwayneInputs,
     harwayne_complement,
 )
-from ratemaking_tools.complements.first_dollar import _to_years
+from ratemaking.complements.first_dollar import _to_years
 
 
 # -----------------------------
