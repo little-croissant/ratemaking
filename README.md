@@ -135,8 +135,8 @@ pytest tests/ -v
 ### Setting up for development:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ratemaking-tools.git
-cd ratemaking-tools
+git clone https://github.com/little-croissant/ratemaking.git
+cd ratemaking
 pip install -e .
 pip install -e ".[test]"
 ```

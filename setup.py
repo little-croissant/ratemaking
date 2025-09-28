@@ -4,18 +4,18 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="ratemaking-tools",
-    version="0.3.0",
-    author="Aria Team",
-    author_email="your-email@example.com",  # Update this with your actual email
+    name="ratemaking",
+    version="0.1.0",
+    author="Hugo Latendresse",
+    author_email="hugolatendresse@gmail.com",  # Update this with your actual email
     description="A comprehensive Python library for P&C actuarial ratemaking",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/little-croissant/ratemaking-tools",  # Update with your GitHub URL
+    url="https://github.com/little-croissant/ratemaking",  # Update with your GitHub URL
     project_urls={
-        "Bug Reports": "https://github.com/little-croissant/ratemaking-tools/issues",
-        "Source": "https://github.com/little-croissant/ratemaking-tools",
-        "Documentation": "https://github.com/little-croissant/ratemaking-tools#readme",
+        "Bug Reports": "https://github.com/little-croissant/ratemaking/issues",
+        "Source": "https://github.com/little-croissant/ratemaking",
+        "Documentation": "https://github.com/little-croissant/ratemaking#readme",
     },
     packages=find_packages(),
     classifiers=[
