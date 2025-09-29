@@ -3,12 +3,13 @@ Ratemaking Tools: A comprehensive Python library for P&C actuarial ratemaking
 
 This package provides tools for:
 - Credibility analysis (classical, Bühlmann, Bayesian)
+- Complement calculations (First-Dollar methods)
 - Trending analysis (coming soon)
 - Exposure calculations (coming soon)
 - Data processing utilities (coming soon)
 
 For backward compatibility, all credibility functions are available at the top level.
-For organized access, use the submodules: credibility, trending, exposure, utils.
+For organized access, use the submodules: credibility, complements, trending, exposure, utils.
 """
 
 # Import all credibility tools for backward compatibility
@@ -37,11 +38,12 @@ from .credibility import (
 
 # Submodule imports (recommended for new code)
 from . import credibility
+from . import complements
 from . import trending
 from . import exposure
 from . import utils
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
 __all__ = [
     # Classical credibility functions
@@ -67,6 +69,7 @@ __all__ = [
     
     # Submodules
     'credibility',
+    'complements',
     'trending', 
     'exposure',
     'utils',

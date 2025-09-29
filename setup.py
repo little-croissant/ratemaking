@@ -4,18 +4,18 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="ratemaking-tools",
-    version="0.2.0",
-    author="Aria Team",
-    author_email="your-email@example.com",  # Update this with your actual email
+    name="ratemaking",
+    version="0.1.0",
+    author="Hugo Latendresse",
+    author_email="hugolatendresse@gmail.com",  # Update this with your actual email
     description="A comprehensive Python library for P&C actuarial ratemaking",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/little-croissant/ratemaking-tools",  # Update with your GitHub URL
+    url="https://github.com/little-croissant/ratemaking",  # Update with your GitHub URL
     project_urls={
-        "Bug Reports": "https://github.com/little-croissant/ratemaking-tools/issues",
-        "Source": "https://github.com/little-croissant/ratemaking-tools",
-        "Documentation": "https://github.com/little-croissant/ratemaking-tools#readme",
+        "Bug Reports": "https://github.com/little-croissant/ratemaking/issues",
+        "Source": "https://github.com/little-croissant/ratemaking",
+        "Documentation": "https://github.com/little-croissant/ratemaking#readme",
     },
     packages=find_packages(),
     classifiers=[
@@ -32,10 +32,10 @@ setup(
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
     ],
-    keywords="actuarial ratemaking credibility insurance P&C casualty property",
+    keywords="actuarial ratemaking credibility complements insurance P&C casualty property",
     python_requires=">=3.8",
     install_requires=[
-        # All modules currently use standard library only
+        "pandas>=1.3.0",
     ],
     extras_require={
         "test": [
