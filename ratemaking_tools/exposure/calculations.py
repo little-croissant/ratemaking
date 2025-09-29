@@ -15,6 +15,14 @@ from datetime import datetime, timedelta
 from typing import List, Dict, Any, Optional
 
 
+class Exposure:
+    """Holds exposures of different types and allows returning different representations"""
+
+    # TODO be able to ingest exposures either as continuous or discrete
+    # TODO be able to return a pandas with earned exposure
+    # TODO be able to return a chainladder triangle with all columns the same in a given row
+
+
 def parse_quarter(quarter_str: str) -> datetime:
     """Parse a string like '2017 Q1' into a datetime object for the first day of the quarter."""
     year, q = quarter_str.split()
