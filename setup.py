@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="ratemaking",
-    version="0.1.0",
+    version="0.1.1",
     author="Hugo Latendresse",
     author_email="hugolatendresse@gmail.com",  # Update this with your actual email
     description="A comprehensive Python library for P&C actuarial ratemaking",
