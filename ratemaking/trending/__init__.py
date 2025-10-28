@@ -1,13 +1,18 @@
 """
 Trending analysis tools for P&C ratemaking
 
-This subpackage will provide tools for:
-- Loss cost trending
-- Frequency and severity trending
-- Economic and social inflation adjustments
-- Trend factor calculations
-
-TODO: Implementation coming in future releases
+This subpackage provides tools for:
+- Future average date calculations (written, earned, accident dates)
 """
 
-__all__ = []
+from .trend_analysis import (
+    future_average_written_date,
+    future_average_earned_date,
+    future_average_accident_date,
+)
+
+__all__ = [
+    'future_average_written_date',
+    'future_average_earned_date',
+    'future_average_accident_date',
+]
