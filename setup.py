@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="ratemaking",
-    version="0.1.1",
+    version="0.3.0",
     author="Hugo Latendresse",
     author_email="hugolatendresse@gmail.com",  # Update this with your actual email
     description="A comprehensive Python library for P&C actuarial ratemaking",
@@ -32,10 +32,11 @@ setup(
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
     ],
-    keywords="actuarial ratemaking credibility complements insurance P&C casualty property",
+    keywords="actuarial ratemaking credibility complements trending insurance P&C casualty property",
     python_requires=">=3.8",
     install_requires=[
         "pandas>=1.3.0",
+        "python-dateutil>=2.8.0",
     ],
     extras_require={
         "test": [

@@ -1,13 +1,13 @@
 """
 Exposure calculation tools for P&C ratemaking
 
-This subpackage will provide tools for:
+This subpackage provides tools for:
 - Exposure base calculations
 - Earned exposure adjustments
 - Policy term normalization
-- Territory and class plan exposure
-
-TODO: Implementation coming in future releases
+- Written to earned premium conversion
 """
 
-__all__ = []
+from .calculations import written_to_earned
+
+__all__ = ['written_to_earned']
